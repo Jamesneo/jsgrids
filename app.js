@@ -19,12 +19,13 @@ $(document).ready(function () {
 
 	$(".reset").on("click", function(){
 		
-
-		var gridwidth = prompt("Please choose a width for the grid");
+		$(".squarestyle").remove();
+		
     	var makegrid = gridwidth * gridwidth;
 		
 		var squaresize = 660 / gridwidth;
-     	$(".squarestyle").remove();
+		var gridwidth = prompt("Please choose a width for the grid");
+     	
         for (var i = 0; i < makegrid; i++) {
         $('<div />', {
             'class' : 'squarestyle', 
